@@ -37,7 +37,7 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 
 [![ukKoYn.png](https://s2.ax1x.com/2019/09/24/ukKoYn.png)](https://imgchr.com/i/ukKoYn)
 
-### es6
+### ES6
 ```markdown
 
 
