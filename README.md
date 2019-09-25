@@ -2,8 +2,6 @@
 
 You can use the [editor on GitHub](https://github.com/pioneer22/pioneer22.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
 ### Sort
@@ -56,9 +54,48 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 
 ### Vue
 ```markdown
+4.字符串 新增方法：
+includes()：返回布尔值，表示是否找到了参数字符串。
+startsWith()：返回布尔值，表示参数字符串是否在原字符串的头部。
+endsWith()：返回布尔值，表示参数字符串是否在原字符串的尾部
 
+repeat()：返回一个新字符串，表示将原字符串重复n次。
 
+字符串补全长度的功能
+padStart()：用于头部补全。
+padEnd()：用于尾部补全。
 ```
+[![uZBede.png](https://s2.ax1x.com/2019/09/25/uZBede.png)](https://imgchr.com/i/uZBede)
+
+```markdown
+5.数值 
+Number.isInteger()：用来判断一个数值是否为整数。
+Math.trunc()：用于去除一个数的小数部分，返回整数部分。
+Math.sign()：用来判断一个数到底是正数、负数、还是零。对于非数值，会先将其转换为数值。
+Math.cbrt()：用于计算一个数的立方根。
+Math.hypot()：返回所有参数的平方和的平方根。
+Math.expm1(x)：返回 ex - 1，即Math.exp(x) - 1。
+Math.log1p(x)：返回1 + x的自然对数，即Math.log(1 + x)。如果x小于-1，返回NaN。
+Math.log10(x)：返回以 10 为底的x的对数。如果x小于 0，则返回 NaN。
+Math.log2(x)：返回以 2 为底的x的对数。如果x小于 0，则返回 NaN。
+新增了一个指数运算符（**）
+2 ** 3 // 8
+```
+
+```markdown
+6.数组
+扩展运算符是三个点（...）
+扩展运算符还可以将字符串转为真正的数组。
+Array.from()：用于将两类对象转为真正的数组：类似数组的对象（array-like object）
+和可遍历（iterable）的对象（包括 ES6 新增的数据结构 Set 和 Map）。
+Array.of方法用于将一组值，转换为数组。
+find()：用于找出第一个符合条件的数组成员。
+findIndex()：返回第一个符合条件的数组成员的位置，如果所有成员都不符合条件，则返回-1。
+fill()：使用给定值，填充一个数组。
+数组实例的 entries()，keys() 和 values() 
+```
+[![uZsIO0.png](https://s2.ax1x.com/2019/09/25/uZsIO0.png)](https://imgchr.com/i/uZsIO0)
+
 
 ### 微信小程序
 ```markdown
