@@ -52,7 +52,6 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 ```
 [![uV7B26.png](https://s2.ax1x.com/2019/09/25/uV7B26.png)](https://imgchr.com/i/uV7B26)
 
-### Vue
 ```markdown
 4.字符串 新增方法：
 includes()：返回布尔值，表示是否找到了参数字符串。
@@ -96,6 +95,11 @@ fill()：使用给定值，填充一个数组。
 ```
 [![uZsIO0.png](https://s2.ax1x.com/2019/09/25/uZsIO0.png)](https://imgchr.com/i/uZsIO0)
 
+### Vue
+```markdown
+
+
+```
 
 ### 微信小程序
 ```markdown
