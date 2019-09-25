@@ -95,6 +95,12 @@ fill()：使用给定值，填充一个数组。
 ```
 [![uZsIO0.png](https://s2.ax1x.com/2019/09/25/uZsIO0.png)](https://imgchr.com/i/uZsIO0)
 
+```markdown
+7.对象
+Object.is()：用来比较两个值是否严格相等，与严格比较运算符（===）的行为基本一致。
+Object.assign()：用于对象的合并，将源对象（source）的所有可枚举属性，复制到目标对象（target）。
+```
+
 ### Vue
 ```markdown
 
