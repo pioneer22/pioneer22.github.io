@@ -51,11 +51,8 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
   
 3.从数组和对象中提取值，对变量进行赋值，这被称为解构，提取值后按照对应位置，对变量赋值。
   对象解构也可以指定默认值。字符串也可以解构。
-  
-[![uV7B26.png](https://s2.ax1x.com/2019/09/25/uV7B26.png)](https://imgchr.com/i/uV7B26)
-
-
 ```
+[![uV7B26.png](https://s2.ax1x.com/2019/09/25/uV7B26.png)](https://imgchr.com/i/uV7B26)
 
 ### Vue
 ```markdown
