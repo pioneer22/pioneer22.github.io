@@ -7,11 +7,11 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 ### Sort
 **1.quickSort**
 ```markdown
-快速排序，分而治之，将数组一分为三，再递归排序。
-1.将数组分成三部分，left，piovt，right，使right > piovt， left <= piovt
-2.递归处理left
-3.递归处理right
-4.合并结果
+-快速排序，分而治之，将数组一分为三，再递归排序。
++1.将数组分成三部分，left，piovt，right，使right > piovt， left <= piovt
++2.递归处理left
++3.递归处理right
++4.合并结果
 ```
 ![ukSRN4.png](https://s2.ax1x.com/2019/09/24/ukSRN4.png)
 
