@@ -310,6 +310,8 @@ A.状态码设置为302临时重定向，statusCode。
 B.在响应头中通过Location告诉客户端重定向到哪里去，setHeader。
 
 客户端发现服务端的响应状态码是302的时候就会自动去响应头中找Location,所以可以看到客户端自动跳转。
+302临时重定向。
+301永久重定向，浏览器会记住。
 
 res.statusCode = 302
 res.setHeader('Location','/')
