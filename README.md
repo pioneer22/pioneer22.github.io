@@ -318,7 +318,103 @@ res.setHeader('Location','/')
 ```
 
 ```markdown
+Node中的模块系统
+1.EcmaScript 
+  和浏览器不同，在Node中没有BOM,DOM
+2.核心模块
+  文件操作的fs
+  http服务的http
+  url路径操作模块
+  path路径处理模块
+  os系统操作模块
+3.第三方模块
+  art-template
+  必须通过npm来下载才可以使用
+4.个人模块
+  自己创建的文件
+5.CommonJS模块规范
+  模块系统：
+  A.模块作用域。
+  B.使用require方法来加载模块。
+  C.使用exports接口对象来导出模块中的成员。
+  
+  加载require
+  var 自定义变量名 = require （‘模块’）
+  作用：执行被加载模块中的代码。得到被加载模块中的exports导出接口对象。
+  
+  导出exports
+  A.Node中是模块作用域，默认文件中的所有成员只在当前文件模块有效。
+  B.希望可以被其它模块访问的成员，需要把这些公开的成员都挂载到exports接口对象中。
+  导出多个成员（必须在对象中）
+```
+[![u8ZWlT.png](https://s2.ax1x.com/2019/09/29/u8ZWlT.png)](https://imgchr.com/i/u8ZWlT)
+
+```markdown
+导出单个成员（拿到的就是:函数、字符串）
+当使用多次module.exports 时，后面的会覆盖前面的，以最后一个为准。
+```
+[![u8mexK.png](https://s2.ax1x.com/2019/09/29/u8mexK.png)](https://imgchr.com/i/u8mexK)
+
+```markdown
+exports 和 module.exports的区别
+A.每个模块中都有一个module对象。
+B.modules对象中有一个exports对象。
+C.可以把需要导出的对象都挂载到module.exports接口对象中。即 module.exports.xxx = xxx
+D.Node为了方便，在每一个模块中都提供了一个成员叫：exports, exports === module.exports 为true
+E.对于module.exports.xxx = xxx,完全可以使用exports.xxx = xxx
+F.当一个模块需要导出单个成员的时候，这个时候必须使用，module.exports = xxx,使用exports = xxx 无效。
+每个模块最终向外return的是module.exports,exports只是module.exports的一个引用。所以为exports = xxx
+重新赋值，也不会影响 module.exports,但是如果通过 exports = module.exports来重新建立引用关系则会生效。
+```
+
+```markdown
+第三方模块：
+A.都必须通过npm来下载。
+B.通过require('包名')的方式来进行加载才可以使用。
+C.一个项目有且只有一个node_modules,放在根目录下。
+
+模块的查找机制
+优先从缓存加载
+核心模块
+路径形式的文件模块
+第三方模块
+最后找不到则会报错: Can not found module xxx
+
+package.json中最有用的是dependencies，它可以为我们保存第三方包的依赖信息。
+删除了node_modules,z则可以通过npm install ,自动把package.json中的dependencies中的所有依赖下载回来。
+
+建议执行npm install 包名的时候都加上--save这个选项，目的是用来保存依赖信息。
+```
+
+```markdown
+npm
+A.npm网站（npmjs.com）
+B.只要安装了node就已经安装了npm。
+C.升级npm,npm install --global npm
+
+npm命令
+1.npm init   (npm init -y) 跳过向导，快速生成。
+2.npm install  一次性把dependencies选项中的依赖全部安装
+3.npm install --save 包名  下载并且保存依赖项（package.json文件中的dependencies选项）
+4.npm uninstall --save 包名  删除的同时也会把依赖信息去除
+5.npm 命令 --help 查看指定命令的使用帮助。
+
+安装淘宝的cnpm
+1.在任意目录执行都可以。
+2.--global 表示安装到全局。
+npm install --global cnpm
+
+不安装cnpm使用淘宝服务器下载
+npm install XXX --registry=https://registry.npm.taobao.org
+
+每次手动添加参数会很麻烦，我们可以把这个选项加入配置文件中
+npm config set registry https://registry.npm.taobao.org
+
+查看npm 配置信息
+npm config list 
+```
+
+```markdown
 
 
 ```
-
