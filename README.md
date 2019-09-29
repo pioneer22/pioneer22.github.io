@@ -273,4 +273,50 @@ B.拿到被加载文件模块导出的接口对象。
 每个模块都提供一个对象：'exports',默认是一个空对象。
 把需要被外部访问的成员手动挂载到'exports'接口对象中。
 谁来require这个模块，谁就可以得到模块内部的exports接口对象。
+
+4.补分号
+当一行代码是以'(','\[','\`'这三种开头的时候则在前面补上一个分号用于避免一些语法解析错误。
 ```
+[![u3ZfxS.png](https://s2.ax1x.com/2019/09/29/u3ZfxS.png)](https://imgchr.com/i/u3ZfxS)
+
+```markdown
+5.使用模板引擎art-template
+安装 npm install art-template
+在需要使用的文件模块中加载art-template
+只需要使用require方法加载：require('art-template')
+art-template是下载的包的名字，下载什么就require什么。
+查文档使用模板引擎API
+http://aui.github.io/art-template/zh-cn/docs/api.html
+
+通过readFile默认读取到的data是二进制数据，而模板引擎的render方法需要接收的是字符串，才能给模板引擎使用。
+render方法读取data.toString()就可以了。
+
+6.服务端渲染与客户端渲染的区别
+A.客户端渲染不利于SEO搜索引擎优化。
+B.服务端渲染可以被爬虫抓取到，客户端异步渲染很难被爬虫抓取到。
+真正的网站并不是纯异步和纯服务端渲染出来的，而是两者结合。
+
+7.服务端渲染的流程
+在服务端中，文件的路径不要去写相对路径，这时候所有的资源都是通过url标识来获取的。
+一般服务器开发/public/目录，所以请求路径都写成 /public/xxx。
+/ 是url根路径的意思，浏览器真正发请求的时候会把 http://127.0.0.1:XXX拼上
+带有src或者是href(link) 属性标签的时候，浏览器会自动对这些资源发起请求。
+```
+[![u3nYUs.png](https://s2.ax1x.com/2019/09/29/u3nYUs.png)](https://imgchr.com/i/u3nYUs)
+
+```markdown
+8.如何通过服务端让客户端重定向？
+A.状态码设置为302临时重定向，statusCode。
+B.在响应头中通过Location告诉客户端重定向到哪里去，setHeader。
+
+客户端发现服务端的响应状态码是302的时候就会自动去响应头中找Location,所以可以看到客户端自动跳转。
+
+res.statusCode = 302
+res.setHeader('Location','/')
+```
+
+```markdown
+
+
+```
+
