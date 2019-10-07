@@ -415,6 +415,84 @@ npm config list
 ```
 
 ```markdown
+修改完代码自动重启
+使用nodemon, nodemon是一个基于node.js开发的一个第三方命令行工具，使用的时候需要独立安装
+npm install nodemon
+
+使用nodemon, 当文件发生变化的时候自动重启。
+nodemon XXX.js
+
+基本路由
+路由器
+A.请求方法
+B.请求路径
+C.请求处理函数
+
+// get方法请求
+app.get('' ,function(req, res){
+  res.send()
+})
+
+// post方法请求
+app.post('', function(req, res){
+  res.send()
+})
+
+静态服务
+// public资源
+app.use(express.static('public'))
+
+// files资源
+app.use(express.static('files'))
+
+// /public/xxx
+app.use('/public/', express.static('./public/'))
+
+使用art-template模板引擎
+A.第一个参数，当渲染以 XXX结尾的文件的时候，使用art-template模板引擎
+B.express-art-template是专门用来在Express中把art-template整合到Express中
+C.虽然外面不需要加载art-template,但是也必须安装，因为express-art-template依赖了art-template
+app.engine('XXX',require('express-art-template'))
+
+Express为response相应对象提供了一个方法render
+render方法默认是不可以使用，但是如果配置了模板引擎就可以使用
+res.render('html模板名'，{模板数据})
+第一个参数不能写路径，默认会去项目中的views目录查找该模板文件
+Express有一个约定，开发人员把所有的视图文件都放到views目录中。
+
+// 修改默认的views目录
+app.set('views',render函数的默认路径)
+
+Express中配置使用art-template模板引擎
+npm install --save art-template
+npm install --save express-art-template
+
+使用：
+app.get('/',function(req,res){
+  // express默认会去项目中的views目录找index.html
+  res.render('index.html',{
+    title: 'hello world!'
+  })
+})
+
+在Express中获取表单GET请求参数
+Express内置了一个API,可以直接通过req.query来获取
+
+在Express中获取表单POST请求数据
+通过第三方包： body-parser
+安装：
+npm install --save body-parser
+
+配置：
+```
+[![uWFSpR.png](https://s2.ax1x.com/2019/10/07/uWFSpR.png)](https://imgchr.com/i/uWFSpR)
+
+[![uWFF0O.png](https://s2.ax1x.com/2019/10/07/uWFF0O.png)](https://imgchr.com/i/uWFF0O)
+```markdown
+
+
+```
+```markdown
 
 
 ```
