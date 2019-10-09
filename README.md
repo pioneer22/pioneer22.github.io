@@ -1,5 +1,4 @@
-## GitHub Pages
-
+## 知识点整理
 You can use the [editor on GitHub](https://github.com/pioneer22/pioneer22.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
@@ -545,11 +544,8 @@ exit
 
 终端使用
 show dbs     显示所有数据库
-
 use 数据库名称   切换到指定数据库（如果没有会新建）
-
 db  查看当前操作的数据库
-
 db.表名.操作
 
 MongoDB数据库的基本概念
@@ -561,8 +557,11 @@ C.文档结构很灵活，没有任何限制
 
 ```
 [![u5ztUg.png](https://s2.ax1x.com/2019/10/09/u5ztUg.png)](https://imgchr.com/i/u5ztUg)
+
 [![uISes0.png](https://s2.ax1x.com/2019/10/09/uISes0.png)](https://imgchr.com/i/uISes0)
+
 [![uoiVwq.png](https://s2.ax1x.com/2019/10/09/uoiVwq.png)](https://imgchr.com/i/uoiVwq)
+
 [![uoirnA.png](https://s2.ax1x.com/2019/10/09/uoirnA.png)](https://imgchr.com/i/uoirnA)
 
 ```markdown
