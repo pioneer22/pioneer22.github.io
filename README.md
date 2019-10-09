@@ -1,4 +1,4 @@
-## 知识点整理
+## GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/pioneer22/pioneer22.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
@@ -507,4 +507,73 @@ npm5以前不会有package-lock.json这个文件，npm5之后才加入它。
 当你安装包的时候，npm都会生成或者更新package-lock.json这个文件。
   npm5以后的版本安装包都不需要加 --save这个参数，他会自动保存依赖信息。
   安装包的时候，会自动创建或者更新package-lock.json这个文件。
-  package-lock.json会保存node_modules中所有包的信息（版本、
+  package-lock.json会保存node_modules中所有包的信息（版本、下载地址）
+    这样重新 npm install的时候速度就可以提升。
+  从文件来看，有一个lock称之为锁
+    这个lock是用来锁定版本的
+    这个package-lock.json这个文件的另一个作用就是锁定版本号，防止自动升级新版。
+
+```
+
+```markdown
+MongoDB
+非关系型数据库
+MongoDB是长得最像关系型数据库的非关系型数据库
+数据库 =》 数据库
+数据表 =》 集合（数组）
+表记录 =》 （文档对象）
+
+MongoDB不需要设计表结构
+可以任意往里面存数据，没有结构性一说
+
+启动
+mongoDB默认使用执行mongod命令所处盘符根目录下的/data/db作为自己的数据存储目录
+所以第一次执行该命令之前要手动创建一个 /data/db
+修改默认的数据存储目录：
+mongod --dbpath = 数据存储目录路径
+
+停止
+直接Ctrl+C
+或者直接关闭服务的控制台
+
+连接和退出数据库
+默认连接本机mongoDB服务
+mongo
+
+在连接状态输入exit 退出连接
+exit
+
+终端使用
+show dbs     显示所有数据库
+
+use 数据库名称   切换到指定数据库（如果没有会新建）
+
+db  查看当前操作的数据库
+
+db.表名.操作
+
+MongoDB数据库的基本概念
+A.可以有多个数据库
+B.一个集合中可以有多个文档（表记录）
+C.文档结构很灵活，没有任何限制
+当需要插入数据的时候，只需要往哪个数据库的哪个集合操作就可以了
+一切都由MongoDB来帮你自动完成建库建表这件事。
+
+```
+[![u5ztUg.png](https://s2.ax1x.com/2019/10/09/u5ztUg.png)](https://imgchr.com/i/u5ztUg)
+
+[![uISes0.png](https://s2.ax1x.com/2019/10/09/uISes0.png)](https://imgchr.com/i/uISes0)
+
+[![uoiVwq.png](https://s2.ax1x.com/2019/10/09/uoiVwq.png)](https://imgchr.com/i/uoiVwq)
+
+[![uoirnA.png](https://s2.ax1x.com/2019/10/09/uoirnA.png)](https://imgchr.com/i/uoirnA)
+
+```markdown
+
+
+```
+
+```markdown
+
+
+```
