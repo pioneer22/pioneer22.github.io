@@ -560,6 +560,14 @@ C.文档结构很灵活，没有任何限制
 一切都由MongoDB来帮你自动完成建库建表这件事。
 
 ```
+[![u5ztUg.png](https://s2.ax1x.com/2019/10/09/u5ztUg.png)](https://imgchr.com/i/u5ztUg)
+
+[![uISes0.png](https://s2.ax1x.com/2019/10/09/uISes0.png)](https://imgchr.com/i/uISes0)
+
+```markdown
+
+
+```
 
 ```markdown
 
