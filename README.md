@@ -488,10 +488,33 @@ npm install --save body-parser
 [![uWFSpR.png](https://s2.ax1x.com/2019/10/07/uWFSpR.png)](https://imgchr.com/i/uWFSpR)
 
 [![uWFF0O.png](https://s2.ax1x.com/2019/10/07/uWFF0O.png)](https://imgchr.com/i/uWFF0O)
-```markdown
 
+```markdown
+callback
+是一种数据类型
+参数
+返回值
+一般情况下，把函数作为参数的目的就是为了获取函数内部的异步操作结果
+callback就是回调函数
+```
+[![u4ZJrd.png](https://s2.ax1x.com/2019/10/09/u4ZJrd.png)](https://imgchr.com/i/u4ZJrd)
+
+[![u4ZhGT.png](https://s2.ax1x.com/2019/10/09/u4ZhGT.png)](https://imgchr.com/i/u4ZhGT)
+
+```markdown
+package.json 和 package-lock.json
+npm5以前不会有package-lock.json这个文件，npm5之后才加入它。
+当你安装包的时候，npm都会生成或者更新package-lock.json这个文件。
+  npm5以后的版本安装包都不需要加 --save这个参数，他会自动保存依赖信息。
+  安装包的时候，会自动创建或者更新package-lock.json这个文件。
+  package-lock.json会保存node_modules中所有包的信息（版本、下载地址）
+    这样重新 npm install的时候速度就可以提升。
+  从文件来看，有一个lock称之为锁
+    这个lock是用来锁定版本的
+    这个package-lock.json这个文件的另一个作用就是锁定版本号，防止自动升级新版。
 
 ```
+
 ```markdown
 
 
