@@ -92,7 +92,6 @@ findIndex()：返回第一个符合条件的数组成员的位置，如果所有
 fill()：使用给定值，填充一个数组。
 数组实例的 entries()，keys() 和 values() 
 ```
-[![uZsIO0.png](https://s2.ax1x.com/2019/09/25/uZsIO0.png)](https://imgchr.com/i/uZsIO0)
 
 ```markdown
 7.对象
