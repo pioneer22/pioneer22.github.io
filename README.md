@@ -465,6 +465,14 @@ Express中配置使用art-template模板引擎
 npm install --save art-template
 npm install --save express-art-template
 
+模板中的高级语法
+include
+extend
+block
+```
+[![ubAZhn.png](https://s2.ax1x.com/2019/10/11/ubAZhn.png)](https://imgchr.com/i/ubAZhn)
+
+```markdown
 使用：
 app.get('/',function(req,res){
   // express默认会去项目中的views目录找index.html
@@ -480,6 +488,34 @@ Express内置了一个API,可以直接通过req.query来获取
 通过第三方包： body-parser
 安装：
 npm install --save body-parser
+
+在Express中配置使用express-session
+该插件会为req请求对象添加一个成员：req.session默认是一个对象
+var session = require('express-session')
+app.use(session({
+  // 配置加密字符串，在原有的加密基础上和这个字符串拼起来去加密
+  secret: ‘添加的加密字符串’,
+  resave: false,
+  saveUninitialized: false // 无论是否使用Session,都默认分配一把钥匙
+}))
+
+添加Session数据
+req.session.XX = 内容
+获取Session数据
+req.session.XX
+清除Session数据
+req.session.XX = null
+更严谨的做法
+delete req.session.XX
+
+安装：
+npm install express-session
+
+配置使用MD5加密
+var md5 = require('blueimp-md5') 
+md5(md5(加密内容))
+安装：
+npm install blueimp-md5
 
 配置：
 ```
@@ -564,8 +600,15 @@ C.文档结构很灵活，没有任何限制
 [![uoirnA.png](https://s2.ax1x.com/2019/10/09/uoirnA.png)](https://imgchr.com/i/uoirnA)
 
 ```markdown
+Node中的其它成员
+__dirname 动态获取 可以用来获取当前文件模块所属目录的绝对路径
+__filename 动态获取 可以用来获取当前文件的绝对路径
+__dirname和__filename 是不受执行node命令所属路径影响的。
 
+在node中文件操作的路径被设计为相对于执行node命令所处的路径。
 
+路径拼接使用 path.join()来辅助拼接，在文件操作中使用的相对路径统一转换为动态绝对路径。
+path.join(__dirname,'文件名')
 ```
 
 ```markdown
