@@ -611,6 +611,8 @@ __dirname和__filename 是不受执行node命令所属路径影响的。
 path.join(__dirname,'文件名')
 ```
 <img src="Image/default_icon.png"/>
+
+<img src="Image/quicksort.png"/>
 ```markdown
 
 
