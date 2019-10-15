@@ -610,7 +610,7 @@ __dirname和__filename 是不受执行node命令所属路径影响的。
 路径拼接使用 path.join()来辅助拼接，在文件操作中使用的相对路径统一转换为动态绝对路径。
 path.join(__dirname,'文件名')
 ```
-
+<img src="Image/default_icon.png"/>
 ```markdown
 
 
