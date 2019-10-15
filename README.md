@@ -12,7 +12,7 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 3.递归处理right
 4.合并结果
 ```
-![ukSRN4.png](https://s2.ax1x.com/2019/09/24/ukSRN4.png)
+<img src="Image/quicksort.png"/>
 
 **2.BubbleSort**
 ```markdown
@@ -610,9 +610,8 @@ __dirname和__filename 是不受执行node命令所属路径影响的。
 路径拼接使用 path.join()来辅助拼接，在文件操作中使用的相对路径统一转换为动态绝对路径。
 path.join(__dirname,'文件名')
 ```
-<img src="Image/default_icon.png"/>
 
-<img src="Image/quicksort.png"/>
+
 ```markdown
 
 
