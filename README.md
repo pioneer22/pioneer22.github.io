@@ -367,7 +367,7 @@ C.一个项目有且只有一个node_modules,放在根目录下。
 最后找不到则会报错: Can not found module xxx
 
 package.json中最有用的是dependencies，它可以为我们保存第三方包的依赖信息。
-删除了node_modules,z则可以通过npm install ,自动把package.json中的dependencies中的所有依赖下载回来。
+删除了node_modules,则可以通过npm install ,自动把package.json中的dependencies中的所有依赖下载回来。
 
 建议执行npm install 包名的时候都加上--save这个选项，目的是用来保存依赖信息。
 ```
