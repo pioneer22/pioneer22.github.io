@@ -12,7 +12,7 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 3.递归处理right
 4.合并结果
 ```
-<img src="Image/1quicksort.png"/>
+![KHw7Ke.png](https://s2.ax1x.com/2019/11/01/KHw7Ke.png)
 
 **2.BubbleSort**
 ```markdown
