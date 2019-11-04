@@ -40,7 +40,7 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 
 ### ES6
 ```markdown
-1.立即执行的函数，应该写成箭头行数的形式
+1.立即执行的函数，应该写成箭头函数的形式
 (()=>{ })()
 
 2.let不存在变量提升,使用let来替代var,要先声明let变量后面才能使用，不然会出现暂时性死区。
