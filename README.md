@@ -295,7 +295,28 @@ b.修正this
       super()
     }
   }
-
+  
+  ES7&ES8
+  1.数组
+  includes
+  数组是否包含某个东西
+  
+  数组 keys/values/entries
+            数组         json
+  for of    值(value)    错误
+  for in    下标(key)    key
+  
+  keys=>所有的keys拿出来
+  values=>所有的values拿出来
+  entries=>所有的key-value对拿出来  （实体）
+  
+  padStart/padEnd
+  
+  async await
+  a.相比generator yield，不依赖于外部runner,更加统一，性能更好
+  b.可以用箭头函数
+  
+  
 ### Node.js
 ```markdown
 1.什么是node.js
