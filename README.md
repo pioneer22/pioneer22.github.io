@@ -18,7 +18,7 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 ```markdown
 冒泡排序，循环比较相邻两个数的大小，将较大的数换到最后。
 ```
-[![ukmsJ0.png](https://s2.ax1x.com/2019/09/24/ukmsJ0.png)](https://imgchr.com/i/ukmsJ0)
+[![J0SiSx.png](https://s1.ax1x.com/2020/04/23/J0SiSx.png)](https://imgchr.com/i/J0SiSx)
 
 **3.SelectionSort**
 ```markdown
