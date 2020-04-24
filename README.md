@@ -409,6 +409,17 @@ ssh-keygen -t rsa -C "邮箱"
 生成公钥后把公钥复制到github下新增一个SSH密钥里添加就能不用账户和密码提交代码了
 例子：git push git@github.com:pioneer22/shopBack.git master
 
+在pull和push操作时
+先pull,再push
+
+同个仓库环境下，定义个名字来指向地址
+git remote add 名字 地址
+例子：git remote add origin git@github.com:pioneer22/shopBack.git master
+
+git push origin -u master
+当我们在push的时候，加上-u参数，那么在下一次push时，我们只需要写上git push 就能上传我们
+的代码了。（加上-u后，git会把当前分支与远程指定的分支进行关联。git push origin）
+pull也一样，git push -u XXX后，可以直接git pull 拉取代码。
 
 ### Node.js
 ```markdown
