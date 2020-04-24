@@ -391,7 +391,7 @@ git branch 可以查看当前有哪些分支
 git merge XXX
 合并分支内容,把当前分支与指定分支（XXX）进行合并。
 当前分支，指的是 git branch 命令输出的前面有 * 号的分支
-合并时如果有冲突需要手动去处理,处理后还需要再提交一次。
+合并时,如果有冲突需要手动去处理,处理后还需要再提交一次。
 
 提交代码到Github(当作git服务器来用)
 git push 地址 master
@@ -409,7 +409,7 @@ ssh方式上传代码
 公钥，私钥，两者之间是有关联的
 生成公钥和私钥
 ssh-keygen -t rsa -C "邮箱"
-生成公钥后把公钥复制到github下新增一个SSH密钥里添加就能不用账户和密码提交代码了
+生成公钥后,把公钥复制到github下,新增一个SSH密钥里添加,就能不用账户和密码提交代码了
 例子：git push git@github.com:pioneer22/shopBack.git master
 
 在pull和push操作时
