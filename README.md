@@ -316,7 +316,100 @@ b.修正this
   a.相比generator yield，不依赖于外部runner,更加统一，性能更好
   b.可以用箭头函数
   
-  
+### git
+1.安装
+2.初始化Git仓储/仓库
+这个仓库会存放git对我们项目代码进行备份的文件。
+在项目目录右键打开git bash
+命令 "git init"
+
+3.添加个人信息
+在git中设置当前使用的用户
+每一次备份都会把当前备份者的信息存储起来
+命令： 
+配置用户名：git config --global user.name  "XXX"
+配置邮箱： git config --global user.email "XXX@XXX"
+
+4.把代码存储到.git仓库中
+把指定文件（代码）放到仓库门口
+git add ./XXX
+
+把当前目录所有修改后的文件添加到仓库门口
+git add ./ 
+把仓库门口的代码放到仓库里面去
+git commit -m "这是对这次添加的东西的说明"
+如果只输入git commit
+可通过点击esc键  输入 :q 回车
+如果继续报错
+点击esc键 输入 :q! 回车
+
+可以一次性把我们修改后的代码放到房间里（版本库）
+git commit --all -m "一些说明"
+--all 表示把所有修改的文件提交到版本库
+
+5.查看当前状态
+可以用来查看当前代码有没有被放到仓库中去,可在git add 或git commit命令后使用查看
+git status
+
+6.查看日志
+查看历史提交日志
+git log
+查看简洁版日志
+git log --oneline
+
+7.回退到指定版本
+git reset hard Head~0
+表示回退到上一次代码提交状态
+ 
+git reset hard Head~1
+表示回退到上上次代码提交状态
+
+git reset hard 版本号
+可以通过git log 查到的版本号，精确回退到某一次提交时的状态
+
+git reflog 
+可以看到每一次切换版本的记录：可以看到所有提交的版本号
+
+8.分支
+默认有一个主分支master
+
+创建分支
+git branch XXX
+创建一个XXX分支
+在刚创建时 XXX分支里的东西和master分支里的东西是一样的。
+
+切换分支
+git checkout XXX
+切换到指定分支:这里是切换到名为XXX的分支
+
+git branch 可以查看当前有哪些分支
+
+合并分支
+git merge XXX
+合并分支内容,把当前分支与指定分支（XXX）进行合并。
+当前分支，指的是 git branch 命令输出的前面有 * 号的分支
+合并时如果有冲突需要手动去处理,处理后还需要再提交一次。
+
+提交代码到Github(当作git服务器来用)
+git push 地址 master
+地址示例：https://github.com/pioneer22/shopBack.git
+会把当前分支内容传到远程的master分支上
+
+git pull 地址 master
+地址示例：https://github.com/pioneer22/shopBack.git
+会得到远程分支master的数据：（本地要初始化（git init）一个仓库）
+
+git clone 地址
+会得到远程仓库相同的数据，如果多次执行会覆盖本地内容
+
+ssh方式上传代码
+公钥，私钥，两者之间是有关联的
+生成公钥和私钥
+ssh-keygen -t rsa -C "邮箱"
+生成公钥后把公钥复制到github下新增一个SSH密钥里添加就能不用账户和密码提交代码了
+例子：git push git@github.com:pioneer22/shopBack.git master
+
+
 ### Node.js
 ```markdown
 1.什么是node.js
