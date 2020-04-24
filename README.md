@@ -411,6 +411,7 @@ ssh-keygen -t rsa -C "邮箱"
 
 在pull和push操作时
 先pull,再push
+pull时有冲突，按esc键然后输入:wq回车
 
 同个仓库环境下，定义个名字来指向地址
 git remote add 名字 地址
